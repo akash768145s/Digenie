@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CTA Section */
+
+.cta-bg {
+  background-image: url(../../public/images/cta-bg.jpg);
+}
+
+/* Swiper CSS */
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Title Border  */
+
+.title-border-inner {
+  animation: pulse 3s ease infinite alternate,
+    nudge 5s linear infinite alternate;
+}
+
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(50px, 0);
+  }
+
+  80% {
+    transform: translate(20px, 0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    background-color: #ffffff;
+  }
+
+  50% {
+    background-color: #ffffff;
+  }
+}
